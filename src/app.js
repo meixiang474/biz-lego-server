@@ -52,5 +52,5 @@ app.use(users.routes(), users.allowedMethods());
 app.on("error", (err, ctx) => {
   console.error("server error", err, ctx);
 });
-
+console.log("test demo");
 module.exports = app;
