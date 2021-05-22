@@ -10,7 +10,7 @@
     "test:local": "cross-env NODE_ENV=test_local jest --runInBand  --passWithNoTests --colors --forceExit",
     "test:remote": "cross-env NODE_ENV=test_remote jest --runInBand  --passWithNoTests --colors --forceExit",
     "commitlint": "commitlint -e",
-    "lint": "prettier --write ."
+    "lint": "prettier --write src/**/*.js"
   },
   "dependencies": {
     "ajv": "^8.4.0",
