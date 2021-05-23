@@ -47,6 +47,9 @@ router.get("/api/db-check", async (ctx) => {
       mysqlConn: mysqlRes.length > 0,
       mongodbConn,
       redisConn: redisTestVal != null,
+      // Dockerfile 的环境变量
+      SERVER_NAME: process.env.SERVER_NAME,
+      AUTHOR_NAME: process.env.AUTHOR_NAME,
     },
   };
 });
