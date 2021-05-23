@@ -41,7 +41,7 @@ router.get("/api/db-check", async (ctx) => {
   ctx.body = {
     errno: 0,
     data: {
-      name: "biz-editor-server",
+      name: "biz editor server",
       version: packageInfo.version,
       ENV,
       mysqlConn: mysqlRes.length > 0,
