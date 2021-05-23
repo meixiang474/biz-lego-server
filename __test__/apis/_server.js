@@ -17,7 +17,7 @@ if (isTestLocal) {
 let TOKEN = "";
 
 // 测试机 host
-const REMOTE_HOST = "http://182.92.168.192:8081"; // TODO 待定
+const REMOTE_HOST = "http://39.101.151.113:8081"; // TODO 待定
 
 /**
  * 发送请求
