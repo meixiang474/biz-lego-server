@@ -28,11 +28,11 @@ jobs:
         run: |
           ssh work@39.101.151.113 "
             # 【注意】用 work 账号登录，手动创建 /home/work/imooc-lego 目录
-            # 然后 git clone git://username:password@github.com/imooc-lego/biz-editor-server.git -b dev （私有仓库，使用 github 用户名和密码）
+            # 然后 git clone https://username:password@github.com/imooc-lego/biz-editor-server.git -b dev （私有仓库，使用 github 用户名和密码）
             # 记得删除 origin ，否则会暴露 github 密码
 
             cd /home/work/icya-lego/biz-lego-server;
-            git remote add origin git://meixiang474:${{secrets.ICYA_PASSWORD}}@github.com/meixiang474/biz-lego-server.git;
+            git remote add origin http://meixiang474:${{secrets.ICYA_PASSWORD}}@github.com/meixiang474/biz-lego-server.git;
             git checkout dev;
             git pull origin dev; # 重新下载最新代码
             git remote remove origin; # 删除 origin ，否则会暴露 github 密码
